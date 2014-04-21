@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui">
+<f:view locale="es">		
+
+<h:head>
+	<script type="text/javascript" src='JavaScript/jquery.js'></script>
+	<script type="text/javascript" src='JavaScript/funciones.js'></script>
+<title><h:outputText value="PGR1" />
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="../css/anoceanofsky.css" />
+</h:head >
+
+<h:body>
+
+		<div id="page">
+            <p:breadCrumb>  
+    			<p:menuitem value="Inicio" url="Inicio.xhtml" />
+			</p:breadCrumb>  
+	    </div>
+	   
+	  
+        <div id="mainPicture">
+            <div class="picture">
+        	<div id="headerTitle"> </div>
+                <div id="headerSubtext"> </div>
+            </div>
+        </div>
+		
+		<div class="contentBox">
+        <p>
+			<h:form>
+
+				<p:growl id="growl" showDetail="true" />
+				
+				<div id="pestanas">
+							<ul>
+								<li class="activa"><a href="Procesos.xhtml">Procesos de producción</a></li>
+								<li><a href="Ordenes.xhtml">Ordenes de producción</a></li>
+							</ul>
+						</div>
+						
+				<br></br><br></br>
+
+				<p:panel header="Procesos de producción" footer="">
+						<div class="content">
+						
+<form action="Procesos.xhtml" method="post" id="cargar">
+
+	<p>&nbsp;</p>
+	<p>Elija el archivo que desea cargar 2</p>
+	<p>
+	<input type="file" name="archivo" />
+	</p>
+	<p><input type="submit" value="Envíar"></input></p>
+</form></div>
+<img src="../Imagenes/negocios.jpg" width="313px" height="200px" alt="end" class="imgcenter"/>
+				
+				</p:panel>
+
+			</h:form>
+		</p>
+		</div>
+		
+</h:body>
+</f:view>
+</html>

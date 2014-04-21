@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui">
+<f:view locale="es">		
+
+<h:head>
+<title><h:outputText value="PGR1" />
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="../css/anoceanofsky.css" />
+</h:head >
+
+<h:body>
+
+		<div id="page">
+            <p:breadCrumb>  
+    			<p:menuitem value="Inicio" url="Inicio.xhtml" />
+			</p:breadCrumb>  
+	    </div>
+	   
+	  
+        <div id="mainPicture">
+            <div class="picture">
+        	<div id="headerTitle"> </div>
+                <div id="headerSubtext"> </div>
+            </div>
+        </div>
+		
+		<div class="contentBox">
+        <p>
+			<h:form>
+
+				<p:growl id="growl" showDetail="true" />
+
+				<p:panel header="Ingresar" footer="">
+						<h:panelGrid columns="2">
+							<h:outputText for="nombreUsuario" value="Nombre de usuario: " />
+							<p:inputText id="nombreUsuario"/>
+							
+							<h:outputText  for="contrasena" value="Contraseña: " />							
+							<p:password id="contrasena"/>											
+						</h:panelGrid>
+						<h:panelGrid columns="2">
+								<h:commandButton  type="submit" action="Procesos" value="Entrar" />
+						</h:panelGrid>
+				</p:panel>
+
+			</h:form>
+		</p>
+		</div>
+		
+</h:body>
+</f:view>
+</html>
